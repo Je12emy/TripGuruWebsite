@@ -1,0 +1,168 @@
+﻿function get_carrousel(car_id) {
+    console.log("HOLA1");
+    var fondos_rusia = new Array(
+        'Recursos/carrousel/rusia/yekaterinburg.jpg',
+        'Recursos/carrousel/rusia/sochi.jpeg'
+        )
+    var fondos_corea = new Array(
+        'Recursos/carrousel/corea/t1.jpg',
+        'Recursos/carrousel/corea/t1_skin.jpg'
+        )
+
+    switch (car_id) {
+        case "carrousel_rusia":
+            console.log("caso 1");
+            get_src(fondos_rusia);
+            break;
+        case "carrousel_corea":
+            console.log("caso 2");
+            get_src(fondos_corea);
+            break;
+    }
+ 
+}
+function get_src(slides) {
+    for (x = 0; x < 2; x++) {
+        document.getElementById('img_'+x).src = slides[x];
+    }
+}
+
+
+
+
+function definir_tabla(id_tabla) {
+    var codigo;
+    switch (id_tabla) {
+        case "tabla_rusia":
+            codigo = "ru";
+            solicitar_datos(id_tabla,codigo);
+            break;
+
+    }
+}
+function solicitar_datos(tabla, codigo_iso) {
+    $.get('http://inqstatsapi.inqubu.com/?api_key=530cfc006b489eb6&data=size,population,bigmac_index,murder_rate,density,education_expenditure,health_expenditure,corruption_index,death_rate,fifa,inflation,jobless_rate,military_expenditure,life_expectancy,electric_energy_consumption&countries='+codigo_iso, function (data, status) {
+        console.log(data[0]['countryCode']);
+        var tamaño = data[0]['size'][0]['data'];
+        var habitantes = data[0]['population'][0]['data'];
+        var bigmac = data[0]['bigmac_index'][0]['data'];
+        var densidad = data[0]['density'][0]['data'];
+        var gasto_educacion = data[0]['education_expenditure'][0]['data'];
+        var gasto_salud = data[0]['health_expenditure'][0]['data'];
+        var corrupcion = data[0]['corruption_index'][0]['data'];
+        var muerte = data[0]['death_rate'][0]['data'];
+        console.log(muerte);
+        var fifa = data[0]['fifa'][0]['data'];
+        var inflacion = data[0]['inflation'][0]['data'];
+        var desempleo = data[0]['jobless_rate'][0]['data'];
+        var militar = data[0]['military_expenditure'][0]['data'];
+        var vida = data[0]['life_expectancy'][0]['data'];
+        var energia = data[0]['electric_energy_consumption'][0]['data'];
+
+        document.getElementById(tabla + '_tamaño').innerText = tamaño;
+        document.getElementById(tabla + '_habitantes').innerText = habitantes;
+        document.getElementById(tabla + '_indicebm').innerText = bigmac;
+        document.getElementById(tabla + '_densidad').innerText = densidad
+        document.getElementById(tabla + '_geducacion').innerText = gasto_educacion;
+        document.getElementById(tabla + '_gsalud').innerText = gasto_salud;
+        document.getElementById(tabla + '_tasacorrupcion').innerText = corrupcion;
+        document.getElementById(tabla + '_muertes').innerText = muerte;
+        document.getElementById(tabla + '_fifa').innerText = fifa;
+        document.getElementById(tabla + '_inflacion').innerText = inflacion;
+        document.getElementById(tabla + '_tasadesempleo').innerText = desempleo;
+        document.getElementById(tabla + '_gmilitar').innerText = militar;
+        document.getElementById(tabla + '_expectativavida').innerText = vida;
+        document.getElementById(tabla + '_energia').innerText = energia;
+
+
+        
+
+    });
+    //console.log(habitantes[0]);
+    ////console.log(habitantes.countryCode);
+    //document.getElementById(tabla + "_habitantes").innerText = habitantes;
+}
+
+function getLocation() {
+    if (navigator.geolocation) {//Caputura ubicacion del usuario
+        return navigator.geolocation.getCurrentPosition(showPosition)
+    } else { 
+        console.log("Geolocation is not supported by this browser.");
+    }
+}
+
+var latitud;
+var longitud;
+
+function showPosition(position) {
+
+    latitud = position.coords.latitude;
+    longitud = position.coords.longitude;
+    console.log(latitud + "|" + longitud);
+    setLocation();
+}
+
+function initMap() {
+    getLocation();
+    var options = {
+        zoom:8,
+        center: { lat: 64.9631, lng: -19.0208 }
+    }
+    map = new google.maps.Map(document.getElementById('map'), options);
+
+    
+
+}
+
+
+function setLocation() {
+    map.setCenter({ lat: latitud, lng: longitud })//Pone un nuevo center
+    //Marker
+    var marker = new google.maps.Marker({
+        position: { lat: latitud, lng: longitud }, map: map
+    });
+    setDestination();
+}
+//Map directions
+//Fuente: https://www.youtube.com/watch?v=QuuL29iiOn0 ; https://developers.google.com/maps/documentation/javascript/directions
+function setDestination() {//Definir direccion
+    var direction_render = new google.maps.DirectionsRenderer();
+    var direction_service = new google.maps.DirectionsService();
+
+    var ubicacion = new google.maps.LatLng(latitud,longitud);
+    var destino = new google.maps.LatLng(43.6028, 39.7342);
+
+    direction_render.setMap(map);
+
+    var request = {
+        origin: ubicacion,
+        destination: 'Chicago, IL',
+        travelMode: 'DRIVING'
+    }
+
+    direction_service.route(request, function (result, status) {
+        console.log(result, status);
+        if (status == 'OK') {
+            direction_render.setDirections(result);
+        } else {
+            polyline();
+
+        }
+    });
+}
+//Map Polyline
+function polyline() {
+    var coordinates = [
+        { lat: latitud, lng: longitud },
+        { lat: 43.6028 ,lng:39.7342}
+    ];
+    var path= new google.maps.Polyline({
+        path:coordinates,
+        geodesic: true,
+        strokeColor: '#FF0000',
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+    });
+    path.setMap(map);
+
+}

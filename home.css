@@ -1,0 +1,80 @@
+﻿body,html{
+    height:100%;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.logo {
+    width:75%;
+    height:75%;
+    opacity:1;
+}
+.home {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    opacity:0.9;
+}
+.text_home {
+    color:white;
+    font-size:400%;
+    font-weight:500;
+    text-align:center;
+    text-shadow: 1px 1px 10px #000000;
+}
+.form_home {
+    text-align:center;
+}
+.form_home  input[type=text]{
+    width:75%;
+    box-shadow: 1px 1px 10px #000000;
+    padding:8px;
+    text-align:justify;
+    font-size:200%;
+}
+.form_list {
+    font-size:150%;
+
+}
+a {
+    text-decoration: none;
+}
+.form_list a{
+    color:gray;
+    text-decoration: none;
+}
+.list-group {
+    cursor:pointer;
+    height:30%;
+    display: block;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.list-group-item{
+    text-decoration:double;
+    color:gray;
+}
+
+

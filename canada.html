@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Trip Guru</title>
+    <meta charset="utf-8" />
+    <link href="main.css" rel="stylesheet" />
+    <link href="Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+
+</head>
+<body onload="get_carrousel('carrousel_canada')">
+    <div class="carousel slide carrousel_paises w-100" data-ride="carousel" id="carrousel_canada">
+        <div class="carousel-inner" role="listbox">
+            <div class="barra_carousel">
+                <a class="navbar-brand" href="index.html"><img src="Recursos/Logo/logo_white.png" class="logo" style="width:75%;height:75%;" /></a>
+            </div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carrousel_canada" data-slide-to="0" class="active">
+                <li data-target="#carrousel_canada" data-slide-to="1">
+                <li data-target="#carrousel_canada" data-slide-to="2">
+                <li data-target="#carrousel_canada" data-slide-to="3">
+                <li data-target="#carrousel_canada" data-slide-to="4">
+                <li data-target="#carrousel_canada" data-slide-to="5">
+                <li data-target="#carrousel_canada" data-slide-to="6">
+                <li data-target="#carrousel_canada" data-slide-to="7">
+                <li data-target="#carrousel_canada" data-slide-to="8">
+                <li data-target="#carrousel_canada" data-slide-to="9">
+            </ol>
+
+            <div class="carousel-item active">
+                <a><img id="img_0" class="d-block img-fluid" src="" alt="Primera ubicacion" /></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_1" class="display-1" onclick="marcar_destino(this.id)">Parque Nacional Gros Morne</h1>
+                    <h3>Un paraíso para los amantes de la naturaleza</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_1" class="d-block" src="" alt="Segunda ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_2" class="display-1 small_caption" onclick="marcar_destino(this.id)">Calgary Stampede</h1>
+                    <h3>Uno de los rodeos más famosos del mundo</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_2" class="d-block" src="" alt="Tercera ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_3" class="display-1" onclick="marcar_destino(this.id)">Puerto interior de Victoria</h1>
+                    <h3>Agua en un lado y del otro, hermosos edificios gubernamentales</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_3" class="d-block" src="" alt="Cuarta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_4" class="display-1" onclick="marcar_destino(this.id)">Bahía de Fundy</h1>
+                    <h3>Famosa por sus altas mareas</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_4" class="d-block" src="" alt="Quinta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_5" class="display-1" onclick="marcar_destino(this.id)">Cataratas Athabasca</h1>
+                    <h3>El parque nacional rocoso más grande de Canadá</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_5" class="d-block" src="" alt="Sexta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_6" class="display-1" onclick="marcar_destino(this.id)">Churchill</h1>
+                    <h3>Cientos de visitantes cada año para ver a sus más famosos habitantes, los osos polares.</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_6" class="d-block" src="" alt="Septima ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titlo_7" class="display-1" onclick="marcar_destino(this.id)">Cataratas del Niágara</h1>
+                    <h3>Muchos toman un paseo en bote</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_7" class="d-block" src="" alt="Octava ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="tiulo_8" class="display-1" onclick="marcar_destino(this.id)">El Canadiense</h1>
+                    <h3>Un buen viaje en tren para descansar</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_8" class="d-block" src="" alt="Novena ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_9" class="display-1" onclick="marcar_destino(this.id)">Vieux-Quebec</h1>
+                    <h3>Conocida como “la Gibraltar de las Américas”</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_9" class="d-block" src="" alt="Decima ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_10" class="display-1" onclick="marcar_destino(this.id)">Lago Moraine</h1>
+                    <h3>Uno de los lugares más fotografiados de Canadá</h3>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carrousel_canada" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" />
+                <span class="sr-only">Previous </span>
+            </a>
+            <a class="carousel-control-next" href="#carrousel_canada" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" />
+                <span class="sr-only"> Next </span>
+            </a>
+        </div>
+    </div>
+    <div class="container jumbotron-fluid mt-4" style="padding:0">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <h1 class="display-4 text-center"> Canadá </h1>
+                <p> Canadá es un país que los amantes de la naturaleza disfrutarán. En esta guía podrás ver mi recorrido por el este del país y mis recomendaciones viajeras. Desde la zona de los grandes lagos, surcando las aguas del río San Lorenzo y sus mil islas o descubriendo parques naturales como el Arrowhead o el Algonquin.</p>
+                <p> Además, en Canadá podrás disfrutar del a visita a ciudades cosmopolitas y antiguas, cultura americana y francesa, gastronomía del mundo y una amabilidad y hospitalidad digna de admirar. Toronto, Ottawa, Quebec… son ciudades que desarman y enamoran. Las famosas cataratas del Niágara, a pesar de su sabor comercial, son impresionantes y alquilar una casa a orillas de un lago puede hacer de tus vacaciones una experiencia inolvidable. </p>
+                <h1 class="display-4 text-center"> ¿Cuándo ir a Canadá? </h1>
+                <p>  Verano y otoño son probablemente las mejores épocas para visitar Canadá. En verano el clima es agradable y bastante soleado, los paisajes de un verde intenso. Además, es una época perfecta para poder practicar deportes de agua, alquilar una canoa o un kayak y navegar los lagos y ríos que ocupan una vasta parte del territorio canadiense. </p>
+                <p> En otoño el país se transforma en un espectáculo de colores, rojos intensos, amarillos y tostados. Es la mejor época para visitar los parques naturales y contemplar el espectáculo que nos brinda la naturaleza. </p>
+                <p> Pero si lo que te gusta est la nieve o los deportes de invierno, entonces no lo dudes y visita Canadá en invierno. Podrás patinar en el canal Rideau de Ottawa, su capital, o en entornos naturales idílicos. Los parques naturales suelen tener zonas dedicadas al patinaje sobre hielo, además de caminos bien señalizados para practicar esquí de fondo o raquetas de nieve. También puedes hacer una ruta en trineo o visitar la casa de Papá Noël. </p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h1 class="display-4 text-center"> Moneda y cambio </h1>
+                <p> La moneda que se utiliza en Canadá es el dólar canadiense (CAD). Para tu viaje no hace falta que cambies moneda con antelación. En el mismo aeropuerto puedes sacar dinero en efectivo de un cajero automático, o si lo prefieres, de una casa de cambio. Ten en cuenta que para sacar dinero del cajero pagarás una comisión (depende de la cantidad ya que es un % y de tu banco) pero también te cobran comisión en las casas de cambio.</p>
+                <p> Es muy habitual que en los restaurantes y comercios de Canadá acepten tarjetas como medio de pago, una forma cómoda de pagar que te evita el pago de comisiones. </p>
+                <p> Ten en cuenta que, como en Estados Unidos, en Canadá es práctica común dejar propina en los servicios tipo restaurantes, cafeterías, bares o taxistas… Fíjate si ya está incluido en tu recibo y sinó deja un 10-15% del total consumido. </p>
+                <h1 class="display-4 text-center"> En ruta por Canadá </h1>
+                <p> Si visitas Canadá probablemente estés planteandote una ruta en coche. Siendo uno de los países más extensos del mundo, no lo podrás abarcar todo. Así que una buena opción es decidirte por el Oeste o el Este de Canadá. En nuestra ruta visitamos las principales ciudades del Este de Canadá, que te permite visitar entre otras Toronto, Quebec o Otttawa, además de deleitarte con paisajes de ensueño: lagos, bosques y cataratas. </p>
+                <p> La forma más sencilla (y económica) de viajar por Canadá es trazando una ruta en forma circular, es decir llegar e irte desde el mismo aeropuerto. Los preferidos por los viajeros son los de Toronto o Montreal. Donde aterrizan la mayor parte de vuelos provinentes desde Europa. </p>
+                <p> Desde allí, puedes trazar una ruta por las principales ciudades (Ottawa, Toronto, Quebec y Montreal) y con alguna parada en otras zonas naturales más tranquilas. Nosotros elegimos las Thousand Islands (un atractivo turístico de primer grado), Huntsville (para visitar los parques naturales de Arrowhead y Alguonquin) y finalmente Mont-Tremblant, en un precioso hotel de fácil acceso (pues viajábamos con nuestra hija, de un año). </p>
+                <p> Puedes alquilar coche en el propio aerouperto en alguna de las principales compañías de alquiler de coche. Si viajas con niños pequeños también puedes reservar una sillita de bebé por un coste adicional. La circulación es sencilla, por la derecha y, a diferencia de sus vecinos, utilizan los kilómetros/hora en vez de las millas. Así que no hay confusión. Nosotros reservamos con Hertz porque teníamos puntos aunque seguramente no es la compañía más eocnómica. </p>
+            </div>
+        </div>
+        <!--<div class="row">
+            <div class="col-12">
+                <h1 class="display-4 text-center"> Consejos para viajar a Rusia </h1>
+
+                <ul style="margin-left:25%;">
+                    <li> Solicitar la visa de varias semanas de anticipación </li>
+                    <li> Tenga cuidado con los carteristas en Moscú y San Petersburgo y otros delitos </li>
+                    <li> No beba agua del grifo. Beber agua embotellada en lugar </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="display-4 text-center">Cómo solicitar una visa para Rusia</h1>
+
+            <div class="col-lg-6">
+                <p> El obstáculo más grande para viajar a Rusia para una visita por primera vez suele ser la solicitud de visado. A continuación encontrará una guía rápida para ayudarle a entender el proceso de solicitud de visado para visitar Rusia.</p>
+
+                <p> En primer lugar, usted debe solicitar una visa tan pronto como sea posible antes de su partida. Cuanto más rápido que desea que el visado para ser procesados, más caro es. Por ejemplo, el precio de 2 semanas de servicio para una visa de entrada única es de 70 dólares y si usted quiere que sea procesado en un día y luego se eleva el costo de 300 USD.</p>
+
+                <p> Usted debería considerar también elegir si desea llegar con una visa de negocios o una visa de turista, porque los requisitos son un poco diferentes. El tiempo de estadía concedido también es diferente. La visa de turista sólo le otorga 30 días la estancia, así que si usted desea permanecer por más tiempo, es mejor solicitar una visa de negocios.</p>
+            </div>
+
+            <div class="col-lg-6">
+
+                <p> Antes de aplicar para una visa, usted necesita pedir invitación de la organización rusa. Si usted solicita una visa de negocios, pregunte por invitación de la organización social de Rusia con su nombre claramente escrito, así como las fechas e itinerario. Si usted solicita una visa de turista, usted debe enviar la invitación de su agencia de viajes o un hotel. Usualmente hay algunas tarifas para pedir la invitación.</p>
+                <p> La documentación completa que necesita para solicitar una visa son los siguientes:</p>
+                <ul>
+                    <li> Impreso de solicitud cumplimentado. </li>
+                    <li> Copia de las páginas del pasaporte. </li>
+                    <li> Tres fotos tamaño pasaporte del solicitante.</li>
+                    <li> La invitación de la organización de Rusia.</li>
+                </ul>
+            </div>
+        </div>-->
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <button class="btn-outline-dark btn-block mb-4 mt-5" onclick="definir_tabla('tabla_canada')" data-toggle="collapse" data-target="#tabla_canada"> Solicitar Informacion</button>
+                <table class="table table-bordered collapse" id="tabla_canada">
+                    <thead>
+                        <tr>
+                            <th class="text-center w-50"> Información </th>
+                            <th class="text-center w-50"> Dato </th>
+                            <!--<td id="tabla_canada_habitantes"> Habitantes</td>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Tamaño </td>
+                            <td id="tabla_canada_tamaño">  </td>
+                        </tr>
+                        <tr>
+                            <td> Habitantes </td>
+                            <td id="tabla_canada_habitantes">  </td>
+                        </tr>
+                        <tr>
+                            <td> Indice Big Mac</td>
+                            <td id="tabla_canada_indicebm">  </td>
+                        </tr>
+                        <tr>
+                            <td> Densidad </td>
+                            <td id="tabla_canada_densidad">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto en educacion </td>
+                            <td id="tabla_canada_geducacion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto en salud </td>
+                            <td id="tabla_canada_gsalud">  </td>
+                        </tr>
+                        <tr>
+                            <td> Tasa de Corrupcion </td>
+                            <td id="tabla_canada_tasacorrupcion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Promedio Muertes </td>
+                            <td id="tabla_canada_muertes"> </td>
+                        </tr>
+                        <tr>
+                            <td> Fifa </td>
+                            <td id="tabla_canada_fifa">  </td>
+                        </tr>
+                        <tr>
+                            <td> Inflación </td>
+                            <td id="tabla_canada_inflacion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Tasa de Desempleo </td>
+                            <td id="tabla_canada_tasadesempleo">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto Militar </td>
+                            <td id="tabla_canada_gmilitar">  </td>
+                        </tr>
+                        <tr>
+                            <td> Expectativa de Vida </td>
+                            <td id="tabla_canada_expectativavida">  </td>
+                        </tr>
+                        <tr>
+                            <td> Consumo de Energia </td>
+                            <td id="tabla_canada_energia">  </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12" style="height:600px">
+                <input id="origin-input" class="controls" type="text"
+                       placeholder="Origen">
+
+                <input id="destination-input" class="controls" type="text"
+                       placeholder="Destino">
+                <div id="mode-selector" class="controls">
+                    <input type="radio" name="type" id="changemode-walking" checked="checked">
+                    <label for="changemode-walking">Caminar</label>
+
+                    <input type="radio" name="type" id="changemode-transit">
+                    <label for="changemode-transit">Transitar</label>
+
+                    <input type="radio" name="type" id="changemode-driving">
+                    <label for="changemode-driving">Conducir</label>
+                </div>
+                <div id="map" class="mapa_google mt-5">
+                    <!--AIzaSyCxqM5RNztWW6kS2vNARTfAJi4yu9zuOko-->
+                    <!--AIzaSyACTK3PIHB2K_EMHr18b4j9_eYCBJ3SYT8-->
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-info mt-4"></i>  <small class="ml-1 text-muted"> Al ingresar el nombre de un lugar, google maps te mostrara una posible opcion, seleccionala. </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACTK3PIHB2K_EMHr18b4j9_eYCBJ3SYT8&libraries=places&callback=initMap"
+            async defer></script>
+    <script src="GETscript.js"></script>
+</body>
+</html>

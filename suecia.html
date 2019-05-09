@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Trip Guru</title>
+    <meta charset="utf-8" />
+    <link href="main.css" rel="stylesheet" />
+    <link href="Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+
+</head>
+<body onload="get_carrousel('carrousel_suecia')">
+    <div class="carousel slide carrousel_paises w-100" data-ride="carousel" id="carrousel_suecia">
+        <div class="carousel-inner" role="listbox">
+            <div class="barra_carousel">
+                <a class="navbar-brand" href="index.html"><img src="Recursos/Logo/logo_white.png" class="logo" style="width:75%;height:75%;" /></a>
+            </div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carrousel_suecia" data-slide-to="0" class="active">
+                <li data-target="#carrousel_suecia" data-slide-to="1">
+                <li data-target="#carrousel_suecia" data-slide-to="2">
+                <li data-target="#carrousel_suecia" data-slide-to="3">
+                <li data-target="#carrousel_suecia" data-slide-to="4">
+                <li data-target="#carrousel_suecia" data-slide-to="5">
+                <li data-target="#carrousel_suecia" data-slide-to="6">
+                <li data-target="#carrousel_suecia" data-slide-to="7">
+                <li data-target="#carrousel_suecia" data-slide-to="8">
+                <li data-target="#carrousel_suecia" data-slide-to="9">
+            </ol>
+
+            <div class="carousel-item active">
+                <a><img id="img_0" class="d-block img-fluid" src="" alt="Primera ubicacion" /></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_1" class="display-1" onclick="marcar_destino(this.id)">Gamla Stan</h1>
+                    <h3> Una de las más bellas estampas que ver en Suecia </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_1" class="d-block" src="" alt="Segunda ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_2" class="display-1 small_caption" onclick="marcar_destino(this.id)">Palacio Real de Estocolmo</h1>
+                    <h3> Residencia privada de la familia real sueca </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_2" class="d-block" src="" alt="Tercera ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_3" class="display-1" onclick="marcar_destino(this.id)">Museo Vasa</h1>
+                    <h3>El único barco del siglo XVII que ha sobrevivido hasta nuestros días</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_3" class="d-block" src="" alt="Cuarta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_4" class="display-1" onclick="marcar_destino(this.id)">Liseberg</h1>
+                    <h3> El parque de atracciones más grande de Escandinavia  </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_4" class="d-block" src="" alt="Quinta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_5" class="display-1" onclick="marcar_destino(this.id)"> Universeum </h1>
+                    <h3> El centro de ciencias más grande de los países nórdicos </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_5" class="d-block" src="" alt="Secta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_6" class="display-1" onclick="marcar_destino(this.id)">ABBA The Museum</h1>
+                    <h3>ABBA es el grupo musical sueco por excelencia, su museo es uno de los imprescindibles que visitar</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_6" class="d-block" src="" alt="Septima ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titlo_7" class="display-1" onclick="marcar_destino(this.id)">Museo Nobel</h1>
+                    <h3>Creado conmemorar el primer centenario de los premios de igual denominación, cuenta la historia de Alfred Nobel</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_7" class="d-block" src="" alt="Octava ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="tiulo_8" class="display-1" onclick="marcar_destino(this.id)">Catedral de San Nicolás</h1>
+                    <h3>Conocida como Storkyrkan (Gran Iglesia), es el templo más antiguo de Estocolmo</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_8" class="d-block" src="" alt="Novena ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_9" class="display-1" onclick="marcar_destino(this.id)">Castillo de Malmö</h1>
+                    <h3>Una de las localidades más importantes que visitar en Suecia, al sur del país</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_9" class="d-block" src="" alt="Decima ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_10" class="display-1" onclick="marcar_destino(this.id)">Gotä Canal</h1>
+                    <h3>Une las dos mayores ciudades que ver en Suecia, Estocolmo y Gotemburgo</h3>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carrousel_suecia" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" />
+                <span class="sr-only">Previous </span>
+            </a>
+            <a class="carousel-control-next" href="#carrousel_suecia" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" />
+                <span class="sr-only"> Next </span>
+            </a>
+        </div>
+    </div>
+    <div class="container jumbotron-fluid mt-4" style="padding:0">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <h1 class="display-4 text-center"> Suecia </h1>
+                <p> Suecia es el mayor de los países nórdicos en el norte de Europa, con una población de alrededor de 9,3 millones de personas. Tiene fronteras con Noruega y Finlandia y está conectado a Dinamarca por el puente de Öresund (Öresundsbron). El Mar Báltico se encuentra al este de Suecia, así como el Golfo de Botnia, que separa Suecia de la mayor parte de Finlandia.</p>
+                <h1 class="display-4 text-center"> Clima </h1>
+                <p>  La mayor parte de Suecia posee un clima templado, pese a su latitud, con cuatro estaciones diferentes y temperaturas templadas todo el año. Las tres regiones históricas del país reciben climas un poco diferentes: Gotland cuenta con un clima oceánico, Svealand con un clima húmedo continental y Norrland con un clima boreal. </p>
+                <h1 class="display-4 text-center"> Datos importantes antes de viajar </h1>
+                <p> Después de reservar nuestro billete de avión es importante informarnos sobre datos básicos del país a fin de poder decidir los destinos a conocer y el equipaje que llevaremos, por ejemplo, conocer el himno nacional, el tipo de cambio de moneda (la moneda de Suecia es la corona y un euro es equivalente a 9,5 coronas), su clima (en invierno pueden alcanzar una temperatura de menos 16°C y en verano pueden llegar a los 13°C) y sus costumbres (aunque en Suecia las costumbres son similares a las del resto de Europa, debemos tener presente que es un país pacifista donde las expresiones racistas, intolerantes y otras relacionadas no están permitidas y son mal vistas dentro de sus ciudadanos). </p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h1 class="display-4 text-center"> Cómo Llegar </h1>
+                <p> Si vamos a viajar a Suecia y nos encontramos en Europa podemos elegir el transporte aéreo internacional (para viajar más rápido) y reservar un vuelo en alguna de las aerolíneas que cubren la ruta como RyanAir, Spanair y City Airline. </p>
+                <h1 class="display-4 text-center"> Que ver </h1>
+                <p>
+                    Suecia cuenta con atractivos turísticos para todo tipo de viajeros. Si deseamos un viaje tranquilo podemos comprar un mapa turístico y pasarla tomando fotos a los castillos medievales que adornan sus principales ciudades o si nos gustan los deportes de aventura y el tener contacto con la naturaleza, podemos elegir entre las distintas rutas de turismo verde que ofrece este destino.
+                </p>
+                <h1 class="display-4 text-center"> Gastronomia </h1>
+                <p> Para finalizar cada día podemos aprovechar para disfrutar de la gastronomía de Suecia, donde sobresalen platillos como el smörgåsbord y el pytt i panna, ambos platos que tienen como base las frituras, embutidos y patatas </p>
+            </div>
+        </div>
+        <!--<div class="row">
+            <div class="col-12">
+                <h1 class="display-4 text-center"> Consejos para viajar a Rusia </h1>
+
+                <ul style="margin-left:25%;">
+                    <li> Solicitar la visa de varias semanas de anticipación </li>
+                    <li> Tenga cuidado con los carteristas en Moscú y San Petersburgo y otros delitos </li>
+                    <li> No beba agua del grifo. Beber agua embotellada en lugar </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="display-4 text-center">Cómo solicitar una visa para Rusia</h1>
+
+            <div class="col-lg-6">
+                <p> El obstáculo más grande para viajar a Rusia para una visita por primera vez suele ser la solicitud de visado. A continuación encontrará una guía rápida para ayudarle a entender el proceso de solicitud de visado para visitar Rusia.</p>
+
+                <p> En primer lugar, usted debe solicitar una visa tan pronto como sea posible antes de su partida. Cuanto más rápido que desea que el visado para ser procesados, más caro es. Por ejemplo, el precio de 2 semanas de servicio para una visa de entrada única es de 70 dólares y si usted quiere que sea procesado en un día y luego se eleva el costo de 300 USD.</p>
+
+                <p> Usted debería considerar también elegir si desea llegar con una visa de negocios o una visa de turista, porque los requisitos son un poco diferentes. El tiempo de estadía concedido también es diferente. La visa de turista sólo le otorga 30 días la estancia, así que si usted desea permanecer por más tiempo, es mejor solicitar una visa de negocios.</p>
+            </div>
+
+            <div class="col-lg-6">
+
+                <p> Antes de aplicar para una visa, usted necesita pedir invitación de la organización rusa. Si usted solicita una visa de negocios, pregunte por invitación de la organización social de Rusia con su nombre claramente escrito, así como las fechas e itinerario. Si usted solicita una visa de turista, usted debe enviar la invitación de su agencia de viajes o un hotel. Usualmente hay algunas tarifas para pedir la invitación.</p>
+                <p> La documentación completa que necesita para solicitar una visa son los siguientes:</p>
+                <ul>
+                    <li> Impreso de solicitud cumplimentado. </li>
+                    <li> Copia de las páginas del pasaporte. </li>
+                    <li> Tres fotos tamaño pasaporte del solicitante.</li>
+                    <li> La invitación de la organización de Rusia.</li>
+                </ul>
+            </div>
+        </div>-->
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <button class="btn-outline-dark btn-block mb-4 mt-5" onclick="definir_tabla('tabla_suecia')" data-toggle="collapse" data-target="#tabla_suecia"> Solicitar Informacion</button>
+                <table class="table table-bordered collapse" id="tabla_suecia">
+                    <thead>
+                        <tr>
+                            <th class="text-center w-50"> Información </th>
+                            <th class="text-center w-50"> Dato </th>
+                            <!--<td id="tabla_suecia_habitantes"> Habitantes</td>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Tamaño </td>
+                            <td id="tabla_suecia_tamaño">  </td>
+                        </tr>
+                        <tr>
+                            <td> Habitantes </td>
+                            <td id="tabla_suecia_habitantes">  </td>
+                        </tr>
+                        <tr>
+                            <td> Indice Big Mac</td>
+                            <td id="tabla_suecia_indicebm">  </td>
+                        </tr>
+                        <tr>
+                            <td> Densidad </td>
+                            <td id="tabla_suecia_densidad">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto en educacion </td>
+                            <td id="tabla_suecia_geducacion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto en salud </td>
+                            <td id="tabla_suecia_gsalud">  </td>
+                        </tr>
+                        <tr>
+                            <td> Tasa de Corrupcion </td>
+                            <td id="tabla_suecia_tasacorrupcion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Promedio Muertes </td>
+                            <td id="tabla_suecia_muertes"> </td>
+                        </tr>
+                        <tr>
+                            <td> Fifa </td>
+                            <td id="tabla_suecia_fifa">  </td>
+                        </tr>
+                        <tr>
+                            <td> Inflación </td>
+                            <td id="tabla_suecia_inflacion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Tasa de Desempleo </td>
+                            <td id="tabla_suecia_tasadesempleo">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto Militar </td>
+                            <td id="tabla_suecia_gmilitar">  </td>
+                        </tr>
+                        <tr>
+                            <td> Expectativa de Vida </td>
+                            <td id="tabla_suecia_expectativavida">  </td>
+                        </tr>
+                        <tr>
+                            <td> Consumo de Energia </td>
+                            <td id="tabla_suecia_energia">  </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12" style="height:600px">
+                <input id="origin-input" class="controls" type="text"
+                       placeholder="Origen">
+
+                <input id="destination-input" class="controls" type="text"
+                       placeholder="Destino">
+                <div id="mode-selector" class="controls">
+                    <input type="radio" name="type" id="changemode-walking" checked="checked">
+                    <label for="changemode-walking">Caminar</label>
+
+                    <input type="radio" name="type" id="changemode-transit">
+                    <label for="changemode-transit">Transitar</label>
+
+                    <input type="radio" name="type" id="changemode-driving">
+                    <label for="changemode-driving">Conducir</label>
+                </div>
+                <div id="map" class="mapa_google mt-5">
+                    <!--AIzaSyCxqM5RNztWW6kS2vNARTfAJi4yu9zuOko-->
+                    <!--AIzaSyACTK3PIHB2K_EMHr18b4j9_eYCBJ3SYT8-->
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-info mt-4"></i>  <small class="ml-1 text-muted"> Al ingresar el nombre de un lugar, google maps te mostrara una posible opcion, seleccionala. </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACTK3PIHB2K_EMHr18b4j9_eYCBJ3SYT8&libraries=places&callback=initMap"
+            async defer></script>
+    <script src="GETscript.js"></script>
+</body>
+</html>

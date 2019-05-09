@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Trip Guru</title>
+    <meta charset="utf-8" />
+    <link href="main.css" rel="stylesheet" />
+    <link href="Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+
+</head>
+<body onload="get_carrousel('carrousel_emiratos')">
+    <div class="carousel slide carrousel_paises w-100" data-ride="carousel" id="carrousel_emiratos">
+        <div class="carousel-inner" role="listbox">
+            <div class="barra_carousel">
+                <a class="navbar-brand" href="index.html"><img src="Recursos/Logo/logo_white.png" class="logo" style="width:75%;height:75%;" /></a>
+            </div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carrousel_emiratos" data-slide-to="0" class="active">
+                <li data-target="#carrousel_emiratos" data-slide-to="1">
+                <li data-target="#carrousel_emiratos" data-slide-to="2">
+                <li data-target="#carrousel_emiratos" data-slide-to="3">
+                <li data-target="#carrousel_emiratos" data-slide-to="4">
+                <li data-target="#carrousel_emiratos" data-slide-to="5">
+                <li data-target="#carrousel_emiratos" data-slide-to="6">
+                <li data-target="#carrousel_emiratos" data-slide-to="7">
+                <li data-target="#carrousel_emiratos" data-slide-to="8">
+                <li data-target="#carrousel_emiratos" data-slide-to="9">
+            </ol>
+
+            <div class="carousel-item active">
+                <a><img id="img_0" class="d-block img-fluid" src="" alt="Primera ubicacion" /></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_1" class="display-1" onclick="marcar_destino(this.id)">Burj Khalifa</h1>
+                    <h3>El edificio más alto del mundo</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_1" class="d-block" src="" alt="Segunda ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_2" class="display-1 small_caption" onclick="marcar_destino(this.id)">Palmera Jumeirah</h1>
+                    <h3> La más pequeña de tres islas artificiales con forma de palmera</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_2" class="d-block" src="" alt="Tercera ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_3" class="display-1" onclick="marcar_destino(this.id)">Mezquita del Jeque Zayed</h1>
+                    <h3>La más grande de los Emiratos Árabes y la pueden visitar personas de cualquier confesión religiosa.</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_3" class="d-block" src="" alt="Cuarta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_4" class="display-1" onclick="marcar_destino(this.id)">Burj Al Arab</h1>
+                    <h3>El hotel que ofrece una experiencia no apta para todos los bolsillos, pero, sin duda, inolvidable.</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_4" class="d-block" src="" alt="Quinta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_5" class="display-1" onclick="marcar_destino(this.id)">The World</h1>
+                    <h3>un archipiélago de islas artificial con la forma del mapamundi</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_5" class="d-block" src="" alt="Sexta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_6" class="display-1" onclick="marcar_destino(this.id)">Mall Dubái</h1>
+                    <h3>Uno de los centros comerciales más grandes del mundo</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_6" class="d-block" src="" alt="Septima ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titlo_7" class="display-1" onclick="marcar_destino(this.id)">Parque acuatico Wild Wadi</h1>
+                    <h3>El lugar favorito de los niños</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_7" class="d-block" src="" alt="Octava ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="tiulo_8" class="display-1" onclick="marcar_destino(this.id)">Ferrari World Abu Dhabi</h1>
+                    <h3>Este parque temático está dedicado al mundo de los coches Ferrarir</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_8" class="d-block" src="" alt="Novena ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_9" class="display-1" onclick="marcar_destino(this.id)">Al Bastakiya</h1>
+                    <h3>El barrio que se detuvo en el tiempo</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_9" class="d-block" src="" alt="Decima ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_10" class="display-1" onclick="marcar_destino(this.id)">Zoco de Oro</h1>
+                    <h3>El mercado donde debes comprar oro</h3>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carrousel_emiratos" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" />
+                <span class="sr-only">Previous </span>
+            </a>
+            <a class="carousel-control-next" href="#carrousel_emiratos" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" />
+                <span class="sr-only"> Next </span>
+            </a>
+        </div>
+    </div>
+    <div class="container jumbotron-fluid mt-4" style="padding:0">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <h1 class="display-4 text-center"> Emiratos Árabes Unidos </h1>
+                <p> Los Emiratos Árabes Unidos siguen siendo uno de los destinos turísticos más famosos y populares del mundo. El país recibe a los huéspedes durante todo el año. Cada uno de los 7 Emirates es famoso por sus propios puntos de referencia, excursiones y entretenimiento. Uno puede ver la cultura árabe en todo su esplendor durante una visita a Abu Dhabi, la capital del país. La ciudad simplemente sorprende a los viajeros con su exuberante vegetación. Aquí, entre hermosos parques, verá palacios de lujo, viejos fuertes, modernos rascacielos y centros de entretenimiento.</p>
+                <p> Se recomienda a los fanáticos de las compras que visiten Dubai, donde encontrarán el mayor mercado de los Emiratos Árabes Unidos. A medida que se venden muchas joyas finas en este mercado, se ha vuelto ampliamente conocido como el Mercado Dorado (Gold Souk). Además de eso, también hay varios hitos arquitectónicos importantes en Dubai, como el Palacio Sheikh Mohammed, la Mezquita Jumeirah y otros edificios antiguos. </p>
+                <h1 class="display-4 text-center">Historia y Entretenimiento </h1>
+                <p> En 2005, en el centro comercial y de entretenimiento Mall of Emirates se abrió el centro de esquí Sky Dubai. Su superficie es de casi 25 000 m2. El centro interior está equipado con poderosas máquinas de fabricación de nieve que producen más de 30 toneladas de nieve cada día. En el centro, hay rutas de esquí, zonas especiales para practicar snowboard y juegos infantiles bien equipados. Casi 1500 personas se relajan en este inusual centro de entretenimiento todos los días. Además de las rutas de esquí, los huéspedes pueden visitar una gran pista de patinaje.</p>
+                
+            </div>
+            <div class="col-lg-6 col-md-12">
+                
+                <p class="mt-4"> Los Emiratos son muy populares entre los entusiastas de las compras, no solo por los diferentes centros comerciales. De año en año, un festival internacional de compras se lleva a cabo en Dubai. Sus huéspedes no solo pueden comprar artículos únicos con un alto descuento, sino también participar en diferentes entretenimientos. El festival comienza en la segunda quincena de enero y finaliza en febrero. Sus invitados pueden participar en interesantes loterías y concursos. Se organizan conciertos y corridas de toros, pero el principal evento del festival es la venta de productos de todo el mundo.</p>
+                <p> Los entusiastas de las compras deben visitar los Emiratos Árabes Unidos en cualquier época del año. Hay excelentes centros comerciales y mercados coloridos en cada emirato. En Dubai, existe la mayor tienda de libre comercio del mundo. Los precios de los diferentes productos aquí son un 30-50% más bajos que en muchos países europeos. </p>
+                <p> Usted debe ir a los mercados del este ruidoso para las especias raras y dulces. Las joyas de la producción local son muy populares entre los turistas también. En el mercado, siempre puede comprar lujosas telas de seda, ropa de estilo nacional, alfombras hechas a mano y recuerdos interesantes de artesanos locales. Los recuerdos más populares son hermosas cafeteras, cachimbas, ataúdes hechos a mano y artículos de cobre. A los fanáticos de los regalos prácticos les gustarán los artículos de pelo de camello. </p>
+         
+            </div>
+        </div>
+        <!--<div class="row">
+            <div class="col-12">
+                <h1 class="display-4 text-center"> Consejos para viajar a Rusia </h1>
+
+                <ul style="margin-left:25%;">
+                    <li> Solicitar la visa de varias semanas de anticipación </li>
+                    <li> Tenga cuidado con los carteristas en Moscú y San Petersburgo y otros delitos </li>
+                    <li> No beba agua del grifo. Beber agua embotellada en lugar </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="display-4 text-center">Cómo solicitar una visa para Rusia</h1>
+
+            <div class="col-lg-6">
+                <p> El obstáculo más grande para viajar a Rusia para una visita por primera vez suele ser la solicitud de visado. A continuación encontrará una guía rápida para ayudarle a entender el proceso de solicitud de visado para visitar Rusia.</p>
+
+                <p> En primer lugar, usted debe solicitar una visa tan pronto como sea posible antes de su partida. Cuanto más rápido que desea que el visado para ser procesados, más caro es. Por ejemplo, el precio de 2 semanas de servicio para una visa de entrada única es de 70 dólares y si usted quiere que sea procesado en un día y luego se eleva el costo de 300 USD.</p>
+
+                <p> Usted debería considerar también elegir si desea llegar con una visa de negocios o una visa de turista, porque los requisitos son un poco diferentes. El tiempo de estadía concedido también es diferente. La visa de turista sólo le otorga 30 días la estancia, así que si usted desea permanecer por más tiempo, es mejor solicitar una visa de negocios.</p>
+            </div>
+
+            <div class="col-lg-6">
+
+                <p> Antes de aplicar para una visa, usted necesita pedir invitación de la organización rusa. Si usted solicita una visa de negocios, pregunte por invitación de la organización social de Rusia con su nombre claramente escrito, así como las fechas e itinerario. Si usted solicita una visa de turista, usted debe enviar la invitación de su agencia de viajes o un hotel. Usualmente hay algunas tarifas para pedir la invitación.</p>
+                <p> La documentación completa que necesita para solicitar una visa son los siguientes:</p>
+                <ul>
+                    <li> Impreso de solicitud cumplimentado. </li>
+                    <li> Copia de las páginas del pasaporte. </li>
+                    <li> Tres fotos tamaño pasaporte del solicitante.</li>
+                    <li> La invitación de la organización de Rusia.</li>
+                </ul>
+            </div>
+        </div>-->
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <button class="btn-outline-dark btn-block mb-4 mt-5" onclick="definir_tabla('tabla_emiratos')" data-toggle="collapse" data-target="#tabla_emiratos"> Solicitar Informacion</button>
+                <table class="table table-bordered collapse" id="tabla_emiratos">
+                    <thead>
+                        <tr>
+                            <th class="text-center w-50"> Información </th>
+                            <th class="text-center w-50"> Dato </th>
+                            <!--<td id="tabla_emiratos_habitantes"> Habitantes</td>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Tamaño </td>
+                            <td id="tabla_emiratos_tamaño">  </td>
+                        </tr>
+                        <tr>
+                            <td> Habitantes </td>
+                            <td id="tabla_emiratos_habitantes">  </td>
+                        </tr>
+                        <tr>
+                            <td> Indice Big Mac</td>
+                            <td id="tabla_emiratos_indicebm">  </td>
+                        </tr>
+                        <tr>
+                            <td> Densidad </td>
+                            <td id="tabla_emiratos_densidad">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto en educacion </td>
+                            <td id="tabla_emiratos_geducacion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto en salud </td>
+                            <td id="tabla_emiratos_gsalud">  </td>
+                        </tr>
+                        <tr>
+                            <td> Tasa de Corrupcion </td>
+                            <td id="tabla_emiratos_tasacorrupcion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Promedio Muertes </td>
+                            <td id="tabla_emiratos_muertes"> </td>
+                        </tr>
+                        <tr>
+                            <td> Fifa </td>
+                            <td id="tabla_emiratos_fifa">  </td>
+                        </tr>
+                        <tr>
+                            <td> Inflación </td>
+                            <td id="tabla_emiratos_inflacion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Tasa de Desempleo </td>
+                            <td id="tabla_emiratos_tasadesempleo">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto Militar </td>
+                            <td id="tabla_emiratos_gmilitar">  </td>
+                        </tr>
+                        <tr>
+                            <td> Expectativa de Vida </td>
+                            <td id="tabla_emiratos_expectativavida">  </td>
+                        </tr>
+                        <tr>
+                            <td> Consumo de Energia </td>
+                            <td id="tabla_emiratos_energia">  </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12" style="height:600px">
+                <input id="origin-input" class="controls" type="text"
+                       placeholder="Origen">
+
+                <input id="destination-input" class="controls" type="text"
+                       placeholder="Destino">
+                <div id="mode-selector" class="controls">
+                    <input type="radio" name="type" id="changemode-walking" checked="checked">
+                    <label for="changemode-walking">Caminar</label>
+
+                    <input type="radio" name="type" id="changemode-transit">
+                    <label for="changemode-transit">Transitar</label>
+
+                    <input type="radio" name="type" id="changemode-driving">
+                    <label for="changemode-driving">Conducir</label>
+                </div>
+                <div id="map" class="mapa_google mt-5">
+                    <!--AIzaSyCxqM5RNztWW6kS2vNARTfAJi4yu9zuOko-->
+                    <!--AIzaSyACTK3PIHB2K_EMHr18b4j9_eYCBJ3SYT8-->
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-info mt-4"></i>  <small class="ml-1 text-muted"> Al ingresar el nombre de un lugar, google maps te mostrara una posible opcion, seleccionala. </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACTK3PIHB2K_EMHr18b4j9_eYCBJ3SYT8&libraries=places&callback=initMap"
+            async defer></script>
+    <script src="GETscript.js"></script>
+</body>
+</html>

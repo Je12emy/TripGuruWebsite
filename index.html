@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+        <html>
+        <head>
+        <title>Trip Guru</title>
+    	<meta charset="utf-8" />
+        <link href="home.css" rel="stylesheet" />
+        <link href="Content/bootstrap-grid.css" rel="stylesheet" />
+        <link href="Content/bootstrap.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            a {
+                text-decoration:none;
+            }
+            .list-group-item a,a:hover{
+                text-decoration:none;
+                color:inherit
+            }
+            
+            </style>
+    </head>
+    <body>
+        <div class="home" id="landing_home">
+            <nav class="navbar bg-transparent sticky-top">
+                <a class="navbar-brand" href="index.html"><img src="Recursos/Logo/logo_white.png" class="logo" /></a>
+            </nav>
+            <h1 class="text_home" > Descubre tu siguiente destino </h1>
+            <div class="form_home">
+                <input id="barra_busqueda" type="text" onkeyup="flitar_contenido()" class="form_home" placeholder="Buscar" data-toggle="collapse" data-target="#paises"/>
+             </div>
+            
+            <ul class="list-group collapse text-center w-75 form_list" id="paises">
+                <li class="list-group-item"><a href="rusia.html">Rusia</a></li>
+                <li class="list-group-item"><a href="corea.html">Corea del Sur</a></li>
+                <li class="list-group-item"><a href="japon.html">Japón</a></li>
+                <li class="list-group-item"><a href="canada.html">Canada</a></li>
+                <li class="list-group-item"><a href="emiratos.html">Emiratos Árabes</a></li>
+                <li class="list-group-item"><a href="suecia.html">Suecia</a></li>
+                <li class="list-group-item"><a href="alemania.html">Alemania</a></li>
+                <li class="list-group-item"><a href="francia.html">Francia</a></li>
+                <li class="list-group-item"><a href="brasil.html">Brasil</a></li>
+                <li class="list-group-item"><a href="china.html">China</a></li>
+            </ul>
+        </div>
+        
+        <script src="main_script.js"></script>
+        <script src="scripts/jquery-3.3.1.min.js"></script>
+        <script src="scripts/bootstrap.js"></script> <!--Bootstrap JS-->
+    </body>
+    </html>
+
+

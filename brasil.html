@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Trip Guru</title>
+    <meta charset="utf-8" />
+    <link href="main.css" rel="stylesheet" />
+    <link href="Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+
+</head>
+<body onload="get_carrousel('carrousel_brasil')">
+    <div class="carousel slide carrousel_paises w-100" data-ride="carousel" id="carrousel_brasil">
+        <div class="carousel-inner" role="listbox">
+            <div class="barra_carousel">
+                <a class="navbar-brand" href="index.html"><img src="Recursos/Logo/logo_white.png" class="logo" style="width:75%;height:75%;" /></a>
+            </div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carrousel_brasil" data-slide-to="0" class="active">
+                <li data-target="#carrousel_brasil" data-slide-to="1">
+                <li data-target="#carrousel_brasil" data-slide-to="2">
+                <li data-target="#carrousel_brasil" data-slide-to="3">
+                <li data-target="#carrousel_brasil" data-slide-to="4">
+                <li data-target="#carrousel_brasil" data-slide-to="5">
+                <li data-target="#carrousel_brasil" data-slide-to="6">
+                <li data-target="#carrousel_brasil" data-slide-to="7">
+                <li data-target="#carrousel_brasil" data-slide-to="8">
+                <li data-target="#carrousel_brasil" data-slide-to="9">
+            </ol>
+
+            <div class="carousel-item active">
+                <a><img id="img_0" class="d-block img-fluid" src="" alt="Primera ubicacion" /></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_1" class="display-1" onclick="marcar_destino(this.id)">Salvador de Bahía</h1>
+                    <h3>Fascina a sus visitantes por sus playas paradisiacas y arquitecturas coloniales </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_1" class="d-block" src="" alt="Segunda ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_2" class="display-1 small_caption" onclick="marcar_destino(this.id)">Recife</h1>
+                    <h3>Conocida como la Venecia de Brasil</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_2" class="d-block" src="" alt="Tercera ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_3" class="display-1" onclick="marcar_destino(this.id)">Olinda</h1>
+                    <h3>Hogar del que es considerado el centro histórico mejor conservado de todo el Brasil colonial</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_3" class="d-block" src="" alt="Cuarta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_4" class="display-1" onclick="marcar_destino(this.id)">Río de Janeiro</h1>
+                    <h3>Conocida como Ciudad Maravillosa</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_4" class="d-block" src="" alt="Quinta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_5" class="display-1" onclick="marcar_destino(this.id)">Buzios</h1>
+                    <h3>Antiguamente una aldea de pescadores, es hoy es uno de los destinos turísticos más apetecidos del sur</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_5" class="d-block" src="" alt="Secta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_6" class="display-1" onclick="marcar_destino(this.id)">Parque Nacional de Iguazú</h1>
+                    <h3>Enclavado en la selva misionera</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_6" class="d-block" src="" alt="Septima ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titlo_7" class="display-1" onclick="marcar_destino(this.id)">Ruinas de San Miguel de las Misiones </h1>
+                    <h3>Corresponden a los vestigios de lo que fue uno de los tantos pueblos misioneros fundados en el XVII </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_7" class="d-block" src="" alt="Octava ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="tiulo_8" class="display-1" onclick="marcar_destino(this.id)">OuroPreto</h1>
+                    <h3>Corresponde a una antigua ciudad minera fundada durante la época colonial </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_8" class="d-block" src="" alt="Novena ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_9" class="display-1" onclick="marcar_destino(this.id)">Brasilia</h1>
+                    <h3> La capital federal del Brasil y la sede del gobierno del Distrito Federal </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_9" class="d-block" src="" alt="Decima ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_10" class="display-1" onclick="marcar_destino(this.id)">Manaos</h1>
+                    <h3>Puerto y capital del Estado de Amazonas</h3>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carrousel_brasil" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" />
+                <span class="sr-only">Previous </span>
+            </a>
+            <a class="carousel-control-next" href="#carrousel_brasil" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" />
+                <span class="sr-only"> Next </span>
+            </a>
+        </div>
+    </div>
+    <div class="container jumbotron-fluid mt-4" style="padding:0">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <h1 class="display-4 text-center"> Brasil </h1>
+                <p>Brasil (República Federal de Brasil) es el país más grande de América del Sur y el quinto más grande del mundo. Se caracteriza por ser un país multicultural que sobresale por su música, costumbres, desarrollo tecnológico, gastronomía, producciones cinematográficas, arquitectura, pasión por el futbol, y sus espectaculares playas.</p>
+
+                <h1 class="display-4 text-center"> Cómo llegar </h1>
+                <p> A este país de Sudamérica podemos llegar haciendo uso de vuelos internacionales ya que sus principales aeropuertos reciben a diario vuelos y conexiones de gran parte de las ciudades de Europa y América. </p>
+                <h1 class="display-4 text-center"> Qué ver </h1>
+                <p> Brasil cuenta atractivos turísticos en todas sus principales ciudades, por ejemplo, en Río de Janeiro podemos visitar Los Arcos de Lapa, ubicados en el barrio del mismo nombre y que es conocido por ser uno de los de mejor ambiente nocturno de la ciudad; el Cristo Redentor y el Pan de Azúcar. Este recorrido podemos hacerlo por nuestra cuenta o contratando un servicio de tour. </p>
+
+                <h1 class="display-4 text-center"> Alojamientos </h1>
+                <p> Por la gran demanda turística, podremos encontrar en Brasil una variada oferta hotelera que incluye resorts, hoteles cinco estrellas, hoteles de 3 y 4 estrellas, hostales, apartamentos de renta por días y semanas, albergues juveniles y otros. </p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h1 class="display-4 text-center"> Moneda </h1>
+                <p> La moneda oficial es el real que tiene un equivalente a 2,64 reales. En las calles encontraremos cajeros con los que podremos retirar efectivo en reales (se convertirá el monto de dólares o euros que indiquemos) y en la mayoría de negocios podremos comprar con tarjetas de crédito, dólares americanos y euros.</p>
+
+                <h1 class="display-4 text-center"> Idioma </h1>
+                <p> El idioma oficial es el portugués, sin embargo, no tendremos muchos problemas para comunicarnos en español e inglés. </p>
+                <h1 class="display-4 text-center"> Clima </h1>
+                <p> Este destino tiene una temperatura media de 18°C por lo que puede ser visitado todo el año, aunque, también hay fuertes lluvias ya que cuenta con un clima tropical. </p>
+                <h1 class="display-4 text-center"> Ocio </h1>
+                </p> Brasil es un país reconocido por su oferta de ocio diurno y nocturno. Aunque este destino tiene una temperatura media de 18 grados centígrados al año, es decir, que se puede visitar en cualquier época de año, podemos aprovechar el verano para visitar sus playas (entre las que sobresale la de Copacabana). Además, este país recibirá en 2014 un incremente de ofertas y reservas turísticas ya que será sede del Mundial de Futbol 2014. </p>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <button class="btn-outline-dark btn-block mb-4 mt-5" onclick="definir_tabla('tabla_brasil')" data-toggle="collapse" data-target="#tabla_brasil"> Solicitar Informacion</button>
+                <table class="table table-bordered collapse" id="tabla_brasil">
+                    <thead>
+                        <tr>
+                            <th class="text-center w-50"> Información </th>
+                            <th class="text-center w-50"> Dato </th>
+                            <!--<td id="tabla_brasil_habitantes"> Habitantes</td>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Tamaño </td>
+                            <td id="tabla_brasil_tamaño">  </td>
+                        </tr>
+                        <tr>
+                            <td> Habitantes </td>
+                            <td id="tabla_brasil_habitantes">  </td>
+                        </tr>
+                        <tr>
+                            <td> Indice Big Mac</td>
+                            <td id="tabla_brasil_indicebm">  </td>
+                        </tr>
+                        <tr>
+                            <td> Densidad </td>
+                            <td id="tabla_brasil_densidad">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto en educacion </td>
+                            <td id="tabla_brasil_geducacion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto en salud </td>
+                            <td id="tabla_brasil_gsalud">  </td>
+                        </tr>
+                        <tr>
+                            <td> Tasa de Corrupcion </td>
+                            <td id="tabla_brasil_tasacorrupcion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Promedio Muertes </td>
+                            <td id="tabla_brasil_muertes"> </td>
+                        </tr>
+                        <tr>
+                            <td> Fifa </td>
+                            <td id="tabla_brasil_fifa">  </td>
+                        </tr>
+                        <tr>
+                            <td> Inflación </td>
+                            <td id="tabla_brasil_inflacion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Tasa de Desempleo </td>
+                            <td id="tabla_brasil_tasadesempleo">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto Militar </td>
+                            <td id="tabla_brasil_gmilitar">  </td>
+                        </tr>
+                        <tr>
+                            <td> Expectativa de Vida </td>
+                            <td id="tabla_brasil_expectativavida">  </td>
+                        </tr>
+                        <tr>
+                            <td> Consumo de Energia </td>
+                            <td id="tabla_brasil_energia">  </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12" style="height:600px">
+                <input id="origin-input" class="controls" type="text"
+                       placeholder="Origen">
+
+                <input id="destination-input" class="controls" type="text"
+                       placeholder="Destino">
+                <div id="mode-selector" class="controls">
+                    <input type="radio" name="type" id="changemode-walking" checked="checked">
+                    <label for="changemode-walking">Caminar</label>
+
+                    <input type="radio" name="type" id="changemode-transit">
+                    <label for="changemode-transit">Transitar</label>
+
+                    <input type="radio" name="type" id="changemode-driving">
+                    <label for="changemode-driving">Conducir</label>
+                </div>
+                <div id="map" class="mapa_google mt-5">
+                    <!--AIzaSyCxqM5RNztWW6kS2vNARTfAJi4yu9zuOko-->
+                    <!--AIzaSyACTK3PIHB2K_EMHr18b4j9_eYCBJ3SYT8-->
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-info mt-4"></i>  <small class="ml-1 text-muted"> Al ingresar el nombre de un lugar, google maps te mostrara una posible opcion, seleccionala. </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACTK3PIHB2K_EMHr18b4j9_eYCBJ3SYT8&libraries=places&callback=initMap"
+            async defer></script>
+    <script src="GETscript.js"></script>
+</body>
+</html>
+

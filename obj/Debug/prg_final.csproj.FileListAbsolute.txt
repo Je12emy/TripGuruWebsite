@@ -1,0 +1,6 @@
+G:\prg_final\prg_final\obj\Debug\prg_final.csprojResolveAssemblyReference.cache
+G:\prg_final\prg_final\obj\Debug\prg_final.dll
+G:\prg_final\prg_final\obj\Debug\prg_final.pdb
+E:\prg_final\prg_final\obj\Debug\prg_final.csprojResolveAssemblyReference.cache
+E:\prg_final\prg_final\obj\Debug\prg_final.dll
+E:\prg_final\prg_final\obj\Debug\prg_final.pdb

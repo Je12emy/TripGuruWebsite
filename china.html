@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Trip Guru</title>
+    <meta charset="utf-8" />
+    <link href="main.css" rel="stylesheet" />
+    <link href="Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+
+</head>
+<body onload="get_carrousel('carrousel_china')">
+    <div class="carousel slide carrousel_paises w-100" data-ride="carousel" id="carrousel_china">
+        <div class="carousel-inner" role="listbox">
+            <div class="barra_carousel">
+                <a class="navbar-brand" href="index.html"><img src="Recursos/Logo/logo_white.png" class="logo" style="width:75%;height:75%;" /></a>
+            </div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carrousel_china" data-slide-to="0" class="active">
+                <li data-target="#carrousel_china" data-slide-to="1">
+                <li data-target="#carrousel_china" data-slide-to="2">
+                <li data-target="#carrousel_china" data-slide-to="3">
+                <li data-target="#carrousel_china" data-slide-to="4">
+                <li data-target="#carrousel_china" data-slide-to="5">
+                <li data-target="#carrousel_china" data-slide-to="6">
+                <li data-target="#carrousel_china" data-slide-to="7">
+                <li data-target="#carrousel_china" data-slide-to="8">
+                <li data-target="#carrousel_china" data-slide-to="9">
+            </ol>
+
+            <div class="carousel-item active">
+                <a><img id="img_0" class="d-block img-fluid" src="" alt="Primera ubicacion" /></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_1" class="display-1" onclick="marcar_destino(this.id)">La Gran Muralla</h1>
+                    <h3> Compuesta por una serie de fortificaciones de piedra y tierra, construidas y reconstruidas entre los siglos IV aC y el XVI dC </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_1" class="d-block" src="" alt="Segunda ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_2" class="display-1 small_caption" onclick="marcar_destino(this.id)"> La Ciudad Prohibida</h1>
+                    <h3> Irradia un sentimiento de grandeza y opulencia, un aura de pompa y majestuosidad que se ha prolongado a lo largo del tiempo.</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_2" class="d-block" src="" alt="Tercera ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_3" class="display-1" onclick="marcar_destino(this.id)">Los Gerreros de Terracota</h1>
+                    <h3>Descubierto en 1974 al intentar un agricultor local excavar un pozo, el emplazamiento del ejército de terracota</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_3" class="d-block" src="" alt="Cuarta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_4" class="display-1" onclick="marcar_destino(this.id)">Guilin</h1>
+                    <h3>Estampadas en los billetes de 20 yuanes chinos, forman la quintaesencia del paisaje chino</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_4" class="d-block" src="" alt="Quinta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_5" class="display-1" onclick="marcar_destino(this.id)">El río Yangtsé</h1>
+                    <h3>El Yangtsé es el río más largo de China y el tercero más largo del mundo</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_5" class="d-block" src="" alt="Secta ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_6" class="display-1" onclick="marcar_destino(this.id)">Palacio de Potala</h1>
+                    <h3>Hoy en día convertido en museo, el Palacio de Potala fue la residencia de los Dalai Lamas</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_6" class="d-block" src="" alt="Septima ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titlo_7" class="display-1" onclick="marcar_destino(this.id)">Jiuzhaigou </h1>
+                    <h3> Una obra maestra de la naturaleza compuesta de paisajes de ensueño y maravillas de la naturaleza </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_7" class="d-block" src="" alt="Octava ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="tiulo_8" class="display-1" onclick="marcar_destino(this.id)">Anhui</h1>
+                    <h3> Conocida por su paisaje, puestas de sol, picos de granito de formas características, pinos, y el conjunto de nubes instaladas a ambos lados de la montañ </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_8" class="d-block" src="" alt="Novena ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_9" class="display-1" onclick="marcar_destino(this.id)">Suzhou</h1>
+                    <h3> Una ciudad compuesta por ríos y canales. Es conocida además por sus jardines chinos clásicosl </h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img id="img_9" class="d-block" src="" alt="Decima ubicacion"></a>
+                <div class="carousel-caption">
+                    <h1 id="titulo_10" class="display-1" onclick="marcar_destino(this.id)">Victoria Harbour </h1>
+                    <h3>Una importante atracción turística en Hong Kong y uno de los puertos más profundos de contenedores del mundo.</h3>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carrousel_china" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" />
+                <span class="sr-only">Previous </span>
+            </a>
+            <a class="carousel-control-next" href="#carrousel_china" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" />
+                <span class="sr-only"> Next </span>
+            </a>
+        </div>
+    </div>
+    <div class="container jumbotron-fluid mt-4" style="padding:0">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <h1 class="display-4 text-center"> China </h1>
+                <p>Si nuestro próximo destino de viaje es China no sólo debemos interesarnos por investigar por los atractivos turísticos de este país (aunque también podemos ser de los viajeros más aventureros que buscamos conocer los lugares pocos visitados), lo más importante es averiguar la documentación y requisitos necesarios para realizar este viaje.</p>
+
+                <h1 class="display-4 text-center"> Trámites para viajar a China </h1>
+                <p> Si vamos a viajar a China necesitamos ponernos en contacto –desde nuestro país– con una agencia de viajes con sede en la ciudad de destino a fin de que tramite nuestras reservas de tickets, reserva de alojamiento (hoteles en China) y otros. Una vez que la agencia nos de su aprobación deberemos tramitar el visado (el mismo que debe ir acompañado por el fax o telegrama de confirmación enviado por la agencia). Con la agencia elegida también podremos recibir información importante como la relacionada al cambio de moneda o el clima que encontraremos en la ciudad en la fecha de viaje seleccionada. </p>
+                <h1 class="display-4 text-center"> Cómo llegar </h1>
+                <p> Aunque es un dato que la agencia de viajes contactada nos dará, es importante saber que en lo relacionado al transporte internacional, transporte aéreo) de China, las ciudades con mayores vuelos internacionales diarios son Beijing, Shangai y Guanzhou. Si vamos a viajar a China desde España podremos hacerlo utilizando los servicios de Air China (Que cuenta con vuelos a China desde Madrid y Barcelona). </p>
+
+                <h1 class="display-4 text-center"> Qué ver </h1>
+                <p> En China existen diversos destinos de interés turístico que pueden satisfacer a los viajeros aventureros, románticos, familiares, de ocio, de negocios, entre otros. En los últimos años este país se ha dedicado a potenciar su poder turístico por lo que al llegar a nuestro destino encontraremos agencias de viajes que realizan itinerarios especiales para apreciar tanto la belleza natural, como la histórica, cultural y popular de China. </p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h1 class="display-4 text-center"> Atractivos turísticos </h1>
+                <p> Dentro de los principales destinos turísticos de China que no podemos dejar de visitar encontramos a la Muralla China. Recorrer la gran Muralla no sólo es importante por su majestuosidad a lo largo de sus más de seis mil kilómetros de extensión sino porque al visitar la muralla podremos conocer más sobre la historia de lo que fue el imperio y sus dinastías (siendo construida en la época de la Dinastía Ming para proteger al reino de diversas tribus). No olvidemos tomar muchas fotos a esta visita para la que necesitaremos mucha energía su buscamos subir todas las escaleras y visitar gran parte de las torres. </p>
+                <h1 class="display-4 text-center"> Costumbres </h1>
+                <p> Este país es uno de los que cuenta con costumbres y tradiciones más marcadas y milenarias en el mundo, por ello, es vital que si viajamos a China nos informemos sobre las mismas.</p>
+
+                <h1 class="display-4 text-center"> Turismo ecológico </h1>
+                <p> Si lo que buscamos es un poco de turismo ecológico, debemos visitar el denominado Museo Volcánico de China ubicado en la provincia de Heilongjiang. Aquí encontraremos un parque natural conformado por más de quince volcanes e incluso podremos atravesar un túnel de lava donde aún se pueden apreciar formaciones geomorfícas de hace más de tres siglos atrás. Recomendamos comprar un mapa del parque para poder ubicarnos así seamos parte de un tour </p>
+                <h1 class="display-4 text-center"> Gastronomia </h1>
+                <p> Finalmente, no podemos visitar este país sin probar su gastronomía que es considerada una de las más ricas del mundo debido a su antigua tradición culinaria que es incluso representada y homenajeada en la gran mayoría de países a través de restaurantes especializados. </p>
+                
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <button class="btn-outline-dark btn-block mb-4 mt-5" onclick="definir_tabla('tabla_china')" data-toggle="collapse" data-target="#tabla_china"> Solicitar Informacion</button>
+                <table class="table table-bordered collapse" id="tabla_china">
+                    <thead>
+                        <tr>
+                            <th class="text-center w-50"> Información </th>
+                            <th class="text-center w-50"> Dato </th>
+                            <!--<td id="tabla_china_habitantes"> Habitantes</td>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Tamaño </td>
+                            <td id="tabla_china_tamaño">  </td>
+                        </tr>
+                        <tr>
+                            <td> Habitantes </td>
+                            <td id="tabla_china_habitantes">  </td>
+                        </tr>
+                        <tr>
+                            <td> Indice Big Mac</td>
+                            <td id="tabla_china_indicebm">  </td>
+                        </tr>
+                        <tr>
+                            <td> Densidad </td>
+                            <td id="tabla_china_densidad">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto en educacion </td>
+                            <td id="tabla_china_geducacion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto en salud </td>
+                            <td id="tabla_china_gsalud">  </td>
+                        </tr>
+                        <tr>
+                            <td> Tasa de Corrupcion </td>
+                            <td id="tabla_china_tasacorrupcion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Promedio Muertes </td>
+                            <td id="tabla_china_muertes"> </td>
+                        </tr>
+                        <tr>
+                            <td> Fifa </td>
+                            <td id="tabla_china_fifa">  </td>
+                        </tr>
+                        <tr>
+                            <td> Inflación </td>
+                            <td id="tabla_china_inflacion">  </td>
+                        </tr>
+                        <tr>
+                            <td> Tasa de Desempleo </td>
+                            <td id="tabla_china_tasadesempleo">  </td>
+                        </tr>
+                        <tr>
+                            <td> Gasto Militar </td>
+                            <td id="tabla_china_gmilitar">  </td>
+                        </tr>
+                        <tr>
+                            <td> Expectativa de Vida </td>
+                            <td id="tabla_china_expectativavida">  </td>
+                        </tr>
+                        <tr>
+                            <td> Consumo de Energia </td>
+                            <td id="tabla_china_energia">  </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12" style="height:600px">
+                <input id="origin-input" class="controls" type="text"
+                       placeholder="Origen">
+
+                <input id="destination-input" class="controls" type="text"
+                       placeholder="Destino">
+                <div id="mode-selector" class="controls">
+                    <input type="radio" name="type" id="changemode-walking" checked="checked">
+                    <label for="changemode-walking">Caminar</label>
+
+                    <input type="radio" name="type" id="changemode-transit">
+                    <label for="changemode-transit">Transitar</label>
+
+                    <input type="radio" name="type" id="changemode-driving">
+                    <label for="changemode-driving">Conducir</label>
+                </div>
+                <div id="map" class="mapa_google mt-5">
+                    <!--AIzaSyCxqM5RNztWW6kS2vNARTfAJi4yu9zuOko-->
+                    <!--AIzaSyACTK3PIHB2K_EMHr18b4j9_eYCBJ3SYT8-->
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-info mt-4"></i>  <small class="ml-1 text-muted"> Al ingresar el nombre de un lugar, google maps te mostrara una posible opcion, seleccionala. </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACTK3PIHB2K_EMHr18b4j9_eYCBJ3SYT8&libraries=places&callback=initMap"
+            async defer></script>
+    <script src="GETscript.js"></script>
+</body>
+</html>
+
